@@ -11,3 +11,25 @@ Projeto criado com **Vite -> ReactJs + TypeScript**
 npm install
 npm run dev
 ```
+
+
+
+
+
+<details>
+    <summary>Evolução</summary>
+    <details>
+        <summary>Parte 1</summary>
+        <ul>
+            <li>Limpar conteúdo criado pelo vite</li>
+            <li>Importar fonte da aplicação(Google Fonts)</li>
+            <li>Criar Cabeçalho</li>
+            <ul>
+                <li>Flexbox</li>
+                <li>Gradiente Linear</li>
+                <li>Imagem (Perfil Github)</li>
+                <li>Transformação CSS</li>
+            <ul>
+        </ul>
+    </details>
+</details>
