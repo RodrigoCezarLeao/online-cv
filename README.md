@@ -23,7 +23,7 @@ npm run dev
         <ul>
             <li>Limpar conteúdo criado pelo vite</li>
             <li>Importar fonte da aplicação(Google Fonts)</li>
-            <li>Criar Cabeçalho</li>
+            <li>Criar Cabeçalho (html cru)</li>
             <ul>
                 <li>Flexbox</li>
                 <li>Gradiente Linear</li>
@@ -32,4 +32,16 @@ npm run dev
             <ul>
         </ul>
     </details>
+    <details>
+        <summary>Parte 2</summary>
+        <ul>
+            <li>Alguns estilos do cabeçalho</li>
+            <li>Componentizar cabeçalho (react)</li>
+            <li>Separar estilos (cru)</li>
+            <li>Parametrizar informações via props</li>
+            <li>Configurar extensão prettier e colorpicker</li>
+        </ul>
+    </details>
 </details>
+
+
