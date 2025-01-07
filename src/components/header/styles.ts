@@ -4,7 +4,7 @@ export const HeaderContainerStyle: React.CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   gap: 30,
-  padding: "2em",
+  padding: "1em",
 };
 
 export const ProfilePictureContainerStyle: React.CSSProperties = {

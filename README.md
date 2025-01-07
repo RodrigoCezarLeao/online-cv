@@ -42,6 +42,13 @@ npm run dev
             <li>Configurar extensão prettier e colorpicker</li>
         </ul>
     </details>
+    <details>
+        <summary>Parte 3</summary>
+        <ul>
+            <li>Generalizar CV para diversas rotas (tipos diferentes)</li>
+            <li>Instalar react router <code>npm install react-router-dom</code> </li>
+        </ul>
+    </details>
 </details>
 
 

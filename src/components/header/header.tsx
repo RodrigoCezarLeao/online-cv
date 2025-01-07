@@ -12,7 +12,7 @@ export const Header = (props: HeaderProps ) => {
 
     return <div style={{...HeaderContainerStyle, background}}>
             <div 
-                id='profile-picture-container' 
+                id='profile-picture-container'
                 style={ProfilePictureContainerStyle}
             >
                 <img 
