@@ -29,6 +29,7 @@ npm run dev
                 <li>Gradiente Linear</li>
                 <li>Imagem (Perfil Github)</li>
                 <li>Transformação CSS</li>
+                <li>**AULA CONCEITUAL: CORES</li>
             <ul>
         </ul>
     </details>
@@ -39,7 +40,7 @@ npm run dev
             <li>Componentizar cabeçalho (react)</li>
             <li>Separar estilos (cru)</li>
             <li>Parametrizar informações via props</li>
-            <li>Configurar extensão prettier e colorpicker</li>
+            <li>Configurar extensão prettier, colorpicker e turbo log</li>            
         </ul>
     </details>
     <details>
@@ -47,6 +48,16 @@ npm run dev
         <ul>
             <li>Generalizar CV para diversas rotas (tipos diferentes)</li>
             <li>Instalar react router <code>npm install react-router-dom</code> </li>
+        </ul>
+    </details>    
+    <details>
+        <summary>Parte 4</summary>
+        <ul>
+            <li>Começar componente Projeto</li>
+            <li>Rota padrão com redirecionamento automático</li>
+            <li>Redirecionamento de URLs (projetos dentro do currículo)</li>
+            <li>Estilização parcial do Link do Projeto</li>
+            <li>**AULA CONCEITUAL: URL</li>
         </ul>
     </details>
 </details>

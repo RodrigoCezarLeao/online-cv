@@ -1,14 +1,18 @@
 import { HeaderContainerStyle, HeaderTitleStyle, ProfilePictureContainerStyle, ProfilePictureStyle } from "./styles"
 
-interface HeaderProps {
+export interface HeaderModel {
     name: string;
     role: string;
     imgUrl: string;
     background: string;
 }
 
+interface HeaderProps {
+    data: HeaderModel;
+}
+
 export const Header = (props: HeaderProps ) => {
-    const {name, role, imgUrl, background} = props;
+    const {name, role, imgUrl, background} = props.data;
 
     return <div style={{...HeaderContainerStyle, background}}>
             <div 
