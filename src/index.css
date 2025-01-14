@@ -4,6 +4,10 @@
     font-family: "Poppins", serif;
 }
 
+body {
+    background-color: #F2F4F8;
+}
+
 /* Variações da fonte */
 .poppins-thin {
     font-family: "Poppins", serif;

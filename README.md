@@ -60,6 +60,18 @@ npm run dev
             <li>**AULA CONCEITUAL: URL</li>
         </ul>
     </details>
+    <details>
+        <summary>Parte 5</summary>
+        <ul>
+            <li>Estilizar Cabeçalho do Projeto</li>
+            <li>Começar com StyledComponent ```npm install styled-components```</li>
+            <li>Melhorar botão de voltar (ícone e estilo) - Google Icons</li>
+            <li>Adicionar novas estruturas do projeto</li>
+            <li>URL de imagens</li>
+            <li>Estilizar componentes novos</li>
+            <li>Evoluir template de dados</li>
+        </ul>
+    </details>
 </details>
 
 

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { PROJECTS } from "../../projects";
-import { LinkProjetoHoverStyle, LinkProjetoStyle } from "./styles";
+import { LinkProjectHoverStyle, LinkProjectStyle } from "./styles";
 import { useState } from "react";
 
 interface LinkProjectProps {
@@ -17,7 +17,7 @@ export const LinkProject = (props: LinkProjectProps) => {
 
     return (IsProjectValid && 
             <span 
-                style={hover ? LinkProjetoHoverStyle : LinkProjetoStyle} 
+                style={hover ? LinkProjectHoverStyle : LinkProjectStyle} 
                 onClick={() => {
                     navigate(slug)
                 }}
