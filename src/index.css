@@ -6,6 +6,7 @@
 
 body {
     background-color: #F2F4F8;
+    overflow-y: scroll;
 }
 
 /* Variações da fonte */

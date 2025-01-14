@@ -1,3 +1,4 @@
+import { Technologies } from "./enums/technologies";
 import { Project } from "./models/project";
 
 export const PROJECTS: Project[] = [
@@ -6,6 +7,7 @@ export const PROJECTS: Project[] = [
         name: 'Predictive Maintenance',
         description: "Braskem's industrial plants monitoring",
         headerBackground: 'linear-gradient(to right,rgb(255, 249, 138),rgb(52, 148, 199))',
+        technologies: [Technologies.CSharp, Technologies.ReactJs, Technologies.Python],
         features: [
             {
                 title: "Project Architecture",

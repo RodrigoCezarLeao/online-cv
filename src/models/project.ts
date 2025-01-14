@@ -1,3 +1,4 @@
+import { Technologies } from "../enums/technologies";
 import { ProjectFeature } from "./projectFeature";
 
 export interface Project {
@@ -5,5 +6,6 @@ export interface Project {
     name: string;
     description: string;
     headerBackground: string;
+    technologies: Technologies[];
     features: ProjectFeature[];
 }

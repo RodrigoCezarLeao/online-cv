@@ -72,6 +72,17 @@ npm run dev
             <li>Evoluir template de dados</li>
         </ul>
     </details>
+    <details>
+        <summary>Parte 6</summary>
+        <ul>
+            <li>Melhorar estilização details (card)</li>
+            <li>Media query no styled component</li>
+            <li>Mais informações de projeto (tecnologias)</li>
+            <li>Enum e Typescript</li>
+            <li>Logo das Tecnologias</li>
+            <li>Preocupação mínima com layout de mobile</li>
+        </ul>
+    </details>
 </details>
 
 

@@ -11,13 +11,32 @@ export const LinkProjectHoverStyle: React.CSSProperties = {
     textDecoration: 'underline',
 }
 
-export const ProjectTitle = styled.h1`
+export const ProjectHeader = styled.div`
     background: ${(props) => props?.color || 'lightgrey'};
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 1em 0em;
+`
+export const ProjectTitle = styled.h1`
+    text-align: center;
 `;
+
+export const ProjectTechnology = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+
+    span {
+        border-left: 2px solid black;
+        padding: 0em 0.5em;
+    }
+
+    span:first-child {
+        border: none;
+    }
+`
 
 export const ReturnIcon = styled.span`
     cursor: pointer;    
@@ -36,24 +55,49 @@ export const ProjectDescription = styled.p `
     padding: 1em;
 `
 
-export const FeatureCard = styled.details`
+export const ProjectContentContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+`
 
-    &::before {
-        content: "+";
-        position: absolute;
-        left: 0;
+export const FeatureCard = styled.details`
+    color: #1e1e5c;
+    text-align: center;    
+    border: 3px solid #1e1e5c;
+    border-radius: 5px;
+    width: 80%;
+    
+    summary {
+        background: #1e1e5c;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    summary::marker {
+        content: "+ ";
         font-size: 16px;
         font-weight: bold;
+    }
+
+    &[open] summary::marker {
+        content: "- ";
     }
 `
 
 export const FeatureCardContent = styled.div`
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 0.5em;
+
+    @media (max-width: 720px) {
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 export const FeatureCardDescription = styled.p`
@@ -62,7 +106,6 @@ export const FeatureCardDescription = styled.p`
 `
 
 export const FeatureImg = styled.img`
-    width: 400px;
-    border: 5px solid lightgrey;
+    width: 40%;
     border-radius: 5px;
 `

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { PROJECTS } from "../../projects";
-import { FeatureCard, FeatureCardContent, FeatureCardDescription, FeatureImg, ProjectDescription, ProjectTitle, ReturnIcon } from "./styles";
+import { FeatureCard, FeatureCardContent, FeatureCardDescription, FeatureImg, ProjectContentContainer, ProjectDescription, ProjectHeader, ProjectTechnology, ProjectTitle, ReturnIcon } from "./styles";
 import { ProjectFeature } from "../../models/projectFeature";
+import { Technologies } from "../../enums/technologies";
 
 export const Project = () => {
     const navigate = useNavigate();
@@ -17,8 +18,16 @@ export const Project = () => {
 
     
 
-    return <div>        
-        <ProjectTitle color={project?.headerBackground}>Projeto: {project?.name}</ProjectTitle>
+    return <div>  
+        <ProjectHeader color={project?.headerBackground}>
+            <ProjectTitle>Projeto: {project?.name}</ProjectTitle>
+
+            <ProjectTechnology>
+            {project?.technologies.map((tech: Technologies, i: number) => {
+                return  <span>{tech}</span>
+            })}
+            </ProjectTechnology>
+        </ProjectHeader>      
         <ReturnIcon
             className="material-symbols-outlined"
             onClick={() => navigate(-1)}
@@ -30,8 +39,9 @@ export const Project = () => {
             {project?.description}
         </ProjectDescription>
 
+        <ProjectContentContainer>
         {project?.features.map((feature: ProjectFeature, i: number) => {
-            return <FeatureCard>
+            return <FeatureCard key={i}>
                 <summary>{feature?.title}</summary>
 
                 <FeatureCardContent>
@@ -41,5 +51,6 @@ export const Project = () => {
                 </FeatureCardContent>
             </FeatureCard>
         })}
+        </ProjectContentContainer>
     </div>
 }
