@@ -83,6 +83,17 @@ npm run dev
             <li>Preocupação mínima com layout de mobile</li>
         </ul>
     </details>
+    <details>
+        <summary>Parte 7</summary>
+        <ul>
+            <li>Implementar tradução de texto</li>
+            <ul>
+                <li>Custom Hooks</li>
+                <li>Artifício para compartilhar estado</li>
+                <li>Expandir objeto Window</li>
+            </ul>
+        </ul>
+    </details>
 </details>
 
 

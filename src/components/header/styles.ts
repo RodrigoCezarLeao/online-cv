@@ -5,6 +5,7 @@ export const HeaderContainerStyle: React.CSSProperties = {
   justifyContent: "center",
   gap: 30,
   padding: "1em",
+  cursor: "default",
 };
 
 export const ProfilePictureContainerStyle: React.CSSProperties = {

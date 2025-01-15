@@ -3,9 +3,14 @@ import { FullStack } from "./screens/Fullstack/Fullstack";
 import { Backend } from "./screens/Backend/Backend";
 import { Frontend } from "./screens/Frontend/Frontend";
 import { Home } from "./screens/Home/home";
-import { Project } from "./components/projeto/project";
+import { Project } from "./components/project/project";
 
-export default function AppRoutes() {
+interface AppRoutesProps {
+  lang: string;
+  changeLang: () => {}
+}
+
+export default function AppRoutes({lang, changeLang}: AppRoutesProps) {
   return (
     <BrowserRouter>
       <Routes>

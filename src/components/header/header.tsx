@@ -1,11 +1,6 @@
+import { useLang } from "../../hooks/useLang";
+import { HeaderModel } from "../../models/headerModel";
 import { HeaderContainerStyle, HeaderTitleStyle, ProfilePictureContainerStyle, ProfilePictureStyle } from "./styles"
-
-export interface HeaderModel {
-    name: string;
-    role: string;
-    imgUrl: string;
-    background: string;
-}
 
 interface HeaderProps {
     data: HeaderModel;
@@ -13,6 +8,9 @@ interface HeaderProps {
 
 export const Header = (props: HeaderProps ) => {
     const {name, role, imgUrl, background} = props.data;
+        
+    const {lang} = useLang()
+    console.log("🚀 ~ Header ~ lang:", lang)
 
     return <div style={{...HeaderContainerStyle, background}}>
             <div 
@@ -27,8 +25,8 @@ export const Header = (props: HeaderProps ) => {
             </div>
 
             <div style={HeaderTitleStyle}>
-                <h1>{name}</h1>
-                <h3>{role}</h3>
+                <h1>{name.find((x) => x.lang === window.lang)?.text}</h1>
+                <h3>{role.find((x) => x.lang === window.lang)?.text}</h3>
             </div>
      </div>
 }

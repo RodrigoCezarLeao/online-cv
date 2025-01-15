@@ -21,16 +21,18 @@ export const ProjectHeader = styled.div`
 `
 export const ProjectTitle = styled.h1`
     text-align: center;
+    cursor: default;
 `;
 
 export const ProjectTechnology = styled.div`
     display: flex;
     align-items: center;
-    flex-direction: row;    
+    flex-direction: row;
 
     span {
         border-left: 2px solid black;
         padding: 0em 0.5em;
+        cursor: default;
     }
 
     span:first-child {
@@ -53,6 +55,7 @@ export const ProjectDescription = styled.p `
     font-size: 1.5em;
     text-align: center;
     padding: 1em;
+    cursor: default;
 `
 
 export const ProjectContentContainer = styled.div`
@@ -93,6 +96,7 @@ export const FeatureCardContent = styled.div`
     justify-content: space-around;
     flex-direction: row;
     margin-top: 0.5em;
+    cursor: default;
 
     @media (max-width: 720px) {
         flex-direction: column;
