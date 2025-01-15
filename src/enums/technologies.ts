@@ -3,4 +3,8 @@ export enum Technologies {
     ReactJs = "ReactJs",
     Angular = "Angular",
     Python = "Python",
+    PostgreSQL = "PostgreSQL",
+    SQLServer = "SQLServer",
+    GraphQL = "GraphQL",
+    Cognite = "Cognite",
 }

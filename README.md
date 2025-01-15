@@ -87,10 +87,10 @@ npm run dev
         <summary>Parte 7</summary>
         <ul>
             <li>Implementar tradução de texto</li>
-            <ul>
-                <li>Custom Hooks</li>
-                <li>Artifício para compartilhar estado</li>
-                <li>Expandir objeto Window</li>
+            <ul>                
+                <li>Estado Global + Prop Drilling</li>
+                <li>Organizar modelos para texto em ambos idiomas</li>
+                <li>Colocar ícones de país</li>
             </ul>
         </ul>
     </details>

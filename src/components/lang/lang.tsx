@@ -1,11 +1,15 @@
-import { useLang } from "../../hooks/useLang"
-import { LangContainer } from "./styles"
+import { LangContainer, LangImg } from "./styles"
+import { LangText } from "../../models/langText";
 
-export const Lang = () => {
-    const {changeLang} = useLang()
-    
+interface LangProps {
+    setLang: React.Dispatch<React.SetStateAction<keyof LangText>>
+}
+
+export const Lang = (props: LangProps) => {
+    const {setLang} = props;
+
     return <LangContainer>
-        <button onClick={() => changeLang("pt-br")}>PT-BR</button>
-        <button onClick={() => changeLang("en-us")}>EN-US</button>
+        <LangImg src="/lang/brasil.png" onClick={() => {setLang("pt")}} />
+        <LangImg src="/lang/eua.png" onClick={() => {setLang("en")}} />        
     </LangContainer>
 }

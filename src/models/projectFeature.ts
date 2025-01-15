@@ -1,5 +1,7 @@
+import { LangText } from "./langText";
+
 export interface ProjectFeature {
-    title: string;
-    description: string;
+    title: LangText;
+    description: LangText;
     img?: string;
 }

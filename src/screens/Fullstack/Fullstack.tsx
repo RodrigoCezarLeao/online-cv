@@ -1,25 +1,30 @@
 import { Header } from "../../components/header/header"
-import { Lang } from "../../components/lang/lang"
 import { LinkProject } from "../../components/project/linkProject"
 import { HeaderModel } from "../../models/headerModel"
+import { LangKey } from "../../models/langText";
 
-export const FullStack = () => {
+interface FullStackProps {
+    lang: LangKey;
+}
+
+export const FullStack = (props: FullStackProps) => {
+    const {lang} = props;
+
     const headerParams: HeaderModel = {
-        name: [
-            {lang: "pt-br", text: "Rodrigo Cezar Leão"}, 
-            {lang: "en-us", text: "Rodrigo Cezar Leao"} 
-        ],
-        role: [
-            {lang: "pt-br", text: "Desenvolvedor Web - FullStack"}, 
-            {lang: "en-us", text: "Web Developer - FullStack"}
-        ],
+        name: {
+            pt: "Rodrigo Cezar Leão", 
+            en: "Rodrigo Cezar Leao"
+        },
+        role: {
+            pt: "Desenvolvedor Web - Fullstack", 
+            en: "Web Developer - Fullstack"
+        },
         imgUrl: "https://github.com/RodrigoCezarLeao.png" ,
         background: 'linear-gradient(to right,rgb(16, 60, 192),rgb(143, 203, 247))',
     }
     
     return <>
-        <Lang />
-        <Header data={headerParams} />
+        <Header data={headerParams} lang={lang}/>
         <LinkProject slug="pdm-fs" />
     </>
 }

@@ -4,8 +4,16 @@ import { PROJECTS } from "../../projects";
 import { FeatureCard, FeatureCardContent, FeatureCardDescription, FeatureImg, ProjectContentContainer, ProjectDescription, ProjectHeader, ProjectTechnology, ProjectTitle, ReturnIcon } from "./styles";
 import { ProjectFeature } from "../../models/projectFeature";
 import { Technologies } from "../../enums/technologies";
+import { LangKey } from "../../models/langText";
 
-export const Project = () => {
+interface ProjectProps {
+    lang: LangKey;
+}
+
+
+export const Project = (props: ProjectProps) => {
+    const {lang} = props;
+
     const navigate = useNavigate();
     
     const location = useLocation();
@@ -20,11 +28,11 @@ export const Project = () => {
 
     return <div>  
         <ProjectHeader color={project?.headerBackground}>
-            <ProjectTitle>Projeto: {project?.name}</ProjectTitle>
+            <ProjectTitle>{lang == "pt" ? "Projeto: " : "Project: "}{project?.name?.[lang]}</ProjectTitle>
 
             <ProjectTechnology>
             {project?.technologies.map((tech: Technologies, i: number) => {
-                return  <span>{tech}</span>
+                return  <span key={i}>{tech}</span>
             })}
             </ProjectTechnology>
         </ProjectHeader>      
@@ -36,18 +44,18 @@ export const Project = () => {
         </ReturnIcon>
 
         <ProjectDescription>
-            {project?.description}
+            {project?.description?.[lang]}
         </ProjectDescription>
 
         <ProjectContentContainer>
         {project?.features.map((feature: ProjectFeature, i: number) => {
             return <FeatureCard key={i}>
-                <summary>{feature?.title}</summary>
+                <summary>{feature?.title?.[lang]}</summary>
 
                 <FeatureCardContent>
                     <FeatureImg src={`${feature?.img}`} />
 
-                    <FeatureCardDescription>{feature?.description}</FeatureCardDescription>
+                    <FeatureCardDescription>{feature?.description?.[lang]}</FeatureCardDescription>
                 </FeatureCardContent>
             </FeatureCard>
         })}

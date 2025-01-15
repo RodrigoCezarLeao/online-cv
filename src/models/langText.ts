@@ -1,4 +1,6 @@
 export interface LangText {
-    lang: string;
-    text: string;
+    en: string;
+    pt: string;
 }
+
+export type LangKey = keyof LangText;
