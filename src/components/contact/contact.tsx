@@ -1,19 +1,17 @@
+import { ContactModel } from "../../models/contactModel";
 import { ContactContainer, ContactLink } from "./styles";
 
 interface ContactProps {
-    linkedin?: string;
-    github?: string;
-    mail?: string;
-    whatsapp?: string;
-    instagram?: string;
+    data: ContactModel;
 }
 
 export const Contact = (props: ContactProps) => {
-    const sortedMedias = Object.keys(props);
+    const {data} = props;
+    const sortedMedias = Object.keys(data);
 
     const buildUrl = (type: string) => {
-        if (type === "github") return `https://github.com/${props.github}`
-        if (type === "linkedin") return `https://www.linkedin.com/in/${props.linkedin}`        
+        if (type === "github") return `https://github.com/${data.github}`
+        if (type === "linkedin") return `https://www.linkedin.com/in/${data.linkedin}`        
     }
 
     const buildLogoImgUrl = (type: string) => {
@@ -33,7 +31,7 @@ export const Contact = (props: ContactProps) => {
                     > 
                         
                             <img src={buildLogoImgUrl(media)} />
-                            <span>{props?.[media as keyof ContactProps]}</span>
+                            <span>{data?.[media as keyof ContactModel]}</span>
                         
                     </ContactLink>
                 )

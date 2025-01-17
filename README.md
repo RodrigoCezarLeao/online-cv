@@ -100,6 +100,7 @@ npm run dev
             <li>Seção Contatos</li>
             <li>Link blank e segurança</li>
             <li>Estilizações (web e mobile)</li>
+            <li>Props encapsuladas em objeto tipado</li>
         </ul>
     </details>
 </details>

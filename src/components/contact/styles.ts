@@ -11,7 +11,7 @@ export const ContactLink = styled.a`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
+    margin: 0.2em 1em;
 
     img {
         width: 30px;
