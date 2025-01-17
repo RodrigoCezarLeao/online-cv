@@ -4,7 +4,7 @@ export const HeaderContainerStyle: React.CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   gap: 30,
-  padding: "1em",
+  padding: "1.5em",
   cursor: "default",
 };
 

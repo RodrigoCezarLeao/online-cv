@@ -1,3 +1,4 @@
+import { Contact } from "../../components/contact/contact";
 import { Header } from "../../components/header/header"
 import { LinkProject } from "../../components/project/linkProject"
 import { HeaderModel } from "../../models/headerModel"
@@ -25,6 +26,7 @@ export const FullStack = (props: FullStackProps) => {
     
     return <>
         <Header data={headerParams} lang={lang}/>
-        <LinkProject slug="pdm-fs" />
+        <Contact github="rodrigocezarleao" linkedin="rodrigocezarleao" mail="rodrigoczleo@yahoo.com.br" whatsapp="+55 (21) 99829-6447"/>
+        <LinkProject slug="pdm-fs" />        
     </>
 }

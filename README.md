@@ -94,6 +94,14 @@ npm run dev
             </ul>
         </ul>
     </details>
+    <details>
+        <summary>Parte 8</summary>
+        <ul>
+            <li>Seção Contatos</li>
+            <li>Link blank e segurança</li>
+            <li>Estilizações (web e mobile)</li>
+        </ul>
+    </details>
 </details>
 
 
